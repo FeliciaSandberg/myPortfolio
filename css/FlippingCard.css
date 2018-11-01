@@ -1,0 +1,49 @@
+
+/*Håller storleken på kortet*/
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+/*kontrollerar både framochback elementen*/
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #4718B6;
+    color: #fafafa;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+/*vad som visas när man hovrar*/
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #fafafa;
+    background: #DEAA18;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20px;
+}
